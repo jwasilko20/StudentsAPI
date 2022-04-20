@@ -1,0 +1,2 @@
+﻿Add-Migration -Context DataContext -o Data\Migrations Initial
+Update-Database -Context DataContext
