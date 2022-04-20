@@ -42,6 +42,14 @@ namespace StudentsAPI.Data
                     BirthDate = new System.DateTime(2000, 8, 16),
                     CollegeProgram = "Business",
                     YearInProgram = "Junior"
+                },
+                new Student
+                {
+                    Id = 4,
+                    FullName = "Amber Willis",
+                    BirthDate = new System.DateTime(2002, 1, 12),
+                    CollegeProgram = "Information Technology",
+                    YearInProgram = "Sophomore"
                 }
             );
 
@@ -67,6 +75,14 @@ namespace StudentsAPI.Data
                     Id = 3,
                     Name = "Pizza",
                     Origin = "Italia",
+                    GlutenFree = false,
+                    Vegan = false
+                },
+                new FavoriteFood
+                {
+                    Id = 4,
+                    Name = "Doughnuts",
+                    Origin = "Dutch",
                     GlutenFree = false,
                     Vegan = false
                 }
@@ -99,6 +115,15 @@ namespace StudentsAPI.Data
                     FavoriteAlbum = "Guns N’ Roses – Appetite for Destruction",
                     FavoriteArtist = "Bob Dylan",
                     FavoriteBand = "Guns N' Roses"
+                },
+                new FavoriteMusic
+                {
+                    Id = 4,
+                    Genre = "Pop",
+                    FavoriteSong = "John Mayer - Wild Blue",
+                    FavoriteAlbum = "AJR - Neotheater",
+                    FavoriteArtist = "Ben Platt",
+                    FavoriteBand = "Glass Animals"
                 }
             );
 
@@ -132,6 +157,16 @@ namespace StudentsAPI.Data
                     Description = "The world’s tallest building.",
                     MustVisit = true,
                     Visited = false
+                },
+                new FavoritePlace
+                {
+                    Id = 4,
+                    Name = "The Bean",
+                    City = "Chicago",
+                    Country = "United States",
+                    Description = "Reflective Sculpture.",
+                    MustVisit = true,
+                    Visited = true
                 }
             );
         }
