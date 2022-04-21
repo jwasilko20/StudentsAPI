@@ -88,6 +88,11 @@ namespace StudentsAPI.Data.Migrations
                 table: "FavoriteFoods",
                 columns: new[] { "Id", "GlutenFree", "Name", "Origin", "Vegan" },
                 values: new object[] { 3, false, "Pizza", "Italia", false });
+                
+            migrationBuilder.InsertData(
+                table: "FavoriteFoods",
+                columns: new[] { "Id", "GlutenFree", "Name", "Origin", "Vegan" },
+                values: new object[] { 4, false, "Doughnuts", "Dutch", false });
 
             migrationBuilder.InsertData(
                 table: "FavoriteMusics",
@@ -105,6 +110,11 @@ namespace StudentsAPI.Data.Migrations
                 values: new object[] { 3, "Guns N’ Roses – Appetite for Destruction", "Bob Dylan", "Guns N' Roses", "Guns N’ Roses – Paradise City,", "Rock" });
 
             migrationBuilder.InsertData(
+                table: "FavoriteMusics",
+                columns: new[] { "Id", "FavoriteAlbum", "FavoriteArtist", "FavoriteBand", "FavoriteSong", "Genre" },
+                values: new object[] { 4, "AJR - Neotheater", "Ben Platt", "Glass Animals", "John Mayer - Wild Blue", "Pop" });
+
+            migrationBuilder.InsertData(
                 table: "FavoritePlaces",
                 columns: new[] { "Id", "City", "Country", "Description", "MustVisit", "Name", "Visited" },
                 values: new object[] { 1, "Giza", "Egypt", "The largest ancient structure in the world.", true, "The Great Pyramid of Giza", false });
@@ -120,6 +130,11 @@ namespace StudentsAPI.Data.Migrations
                 values: new object[] { 3, " Dubai", "United Arab Emirates", "The world’s tallest building.", true, "Burj Khalifa", false });
 
             migrationBuilder.InsertData(
+                table: "FavoritePlaces",
+                columns: new[] { "Id", "City", "Country", "Description", "MustVisit", "Name", "Visited" },
+                values: new object[] { 4, "Chicago", "United States", "Reflective Sculpture.", true, "The Bean", true });
+
+            migrationBuilder.InsertData(
                 table: "Students",
                 columns: new[] { "Id", "BirthDate", "CollegeProgram", "FullName", "YearInProgram" },
                 values: new object[] { 1, new DateTime(1999, 3, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "Information Technology", "David Nguyen", "Sophomore" });
@@ -133,6 +148,11 @@ namespace StudentsAPI.Data.Migrations
                 table: "Students",
                 columns: new[] { "Id", "BirthDate", "CollegeProgram", "FullName", "YearInProgram" },
                 values: new object[] { 3, new DateTime(2000, 8, 16, 0, 0, 0, 0, DateTimeKind.Unspecified), "Business", "Jane Doe", "Junior" });
+        
+            migrationBuilder.InsertData(
+                table: "Students",
+                columns: new[] { "Id", "BirthDate", "CollegeProgram", "FullName", "YearInProgram" },
+                values: new object[] { 4, new DateTime(2002, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified), "Information Technology", "Amber Willis", "Sophomore" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
