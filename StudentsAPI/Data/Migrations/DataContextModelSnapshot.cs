@@ -62,6 +62,14 @@ namespace StudentsAPI.Data.Migrations
                             Name = "Pizza",
                             Origin = "Italia",
                             Vegan = false
+                        },
+                        new
+                        {
+                            Id = 4,
+                            GlutenFree = false,
+                            Name = "Doughnuts",
+                            Origin = "Dutch",
+                            Vegan = false
                         });
                 });
 
@@ -117,6 +125,15 @@ namespace StudentsAPI.Data.Migrations
                             FavoriteBand = "Guns N' Roses",
                             FavoriteSong = "Guns N’ Roses – Paradise City,",
                             Genre = "Rock"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FavoriteAlbum = "AJR - Neotheater",
+                            FavoriteArtist = "Ben Platt",
+                            FavoriteBand = "Glass Animals",
+                            FavoriteSong = "John Mayer - Wild Blue",
+                            Genre = "Pop"
                         });
                 });
 
@@ -178,6 +195,16 @@ namespace StudentsAPI.Data.Migrations
                             MustVisit = true,
                             Name = "Burj Khalifa",
                             Visited = false
+                        },
+                        new
+                        {
+                            Id = 4,
+                            City = "Chicago",
+                            Country = "United States",
+                            Description = "Reflective Sculpture.",
+                            MustVisit = true,
+                            Name = "The Bean",
+                            Visited = true
                         });
                 });
 
@@ -227,6 +254,14 @@ namespace StudentsAPI.Data.Migrations
                             CollegeProgram = "Business",
                             FullName = "Jane Doe",
                             YearInProgram = "Junior"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            BirthDate = new DateTime(2002, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CollegeProgram = "Information Technology",
+                            FullName = "Amber Willis",
+                            YearInProgram = "Sophomore"
                         });
                 });
 #pragma warning restore 612, 618
