@@ -50,6 +50,14 @@ namespace StudentsAPI.Data
                     BirthDate = new System.DateTime(2002, 1, 12),
                     CollegeProgram = "Information Technology",
                     YearInProgram = "Sophomore"
+                },
+                new Student
+                {
+                    Id = 5,
+                    FullName = "Jenna Wasilko",
+                    BirthDate = new System.DateTime(2002, 2, 5),
+                    CollegeProgram = "Information Technology",
+                    YearInProgram = "Sophomore"
                 }
             );
 
@@ -85,7 +93,16 @@ namespace StudentsAPI.Data
                     Origin = "Dutch",
                     GlutenFree = false,
                     Vegan = false
+                },
+                  new FavoriteFood
+                {
+                    Id = 5,
+                    Name = "Pasta",
+                    Origin = "Asian",
+                    GlutenFree = false,
+                    Vegan = true
                 }
+                
             );
 
             modelBuilder.Entity<FavoriteMusic>().HasData(
@@ -124,6 +141,15 @@ namespace StudentsAPI.Data
                     FavoriteAlbum = "AJR - Neotheater",
                     FavoriteArtist = "Ben Platt",
                     FavoriteBand = "Glass Animals"
+                },
+                new FavoriteMusic
+                {
+                    Id = 5,
+                    Genre = "Pop",
+                    FavoriteSong = "blackbear - halfalive",
+                    FavoriteAlbum = "Amine - ONEPOINTFIVE",
+                    FavoriteArtist = "Baby Keem",
+                    FavoriteBand = "One Direction"
                 }
             );
 
@@ -165,6 +191,16 @@ namespace StudentsAPI.Data
                     City = "Chicago",
                     Country = "United States",
                     Description = "Reflective Sculpture.",
+                    MustVisit = true,
+                    Visited = true
+                },
+                new FavoritePlace
+                {
+                    Id = 5,
+                    Name = "Empire State Building",
+                    City = "New York",
+                    Country = "United States",
+                    Description = "A historical landmark",
                     MustVisit = true,
                     Visited = true
                 }
