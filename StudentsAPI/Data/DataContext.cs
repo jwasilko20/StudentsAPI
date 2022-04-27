@@ -50,7 +50,14 @@ namespace StudentsAPI.Data
                     BirthDate = new System.DateTime(2002, 1, 12),
                     CollegeProgram = "Information Technology",
                     YearInProgram = "Sophomore"
-                }
+                },
+                new Student
+                {
+                    Id = 5
+                    FullName = "Jenna Wasilko",
+                    BirthDate = new System.DateTime(2002, 2, 5),
+                    CollegeProgram = "Information Technology",
+                    YearInProgram = "Sophomore"
             );
 
             modelBuilder.Entity<FavoriteFood>().HasData(
